@@ -8,21 +8,24 @@ This is a Hospital Management System designed to streamline patient records, doc
 - **Doctor Management**: Assign doctors to patients and manage schedules.
 - **Appointment Scheduling**: Book and track patient appointments.
 
+
 ## Installation
 1. Clone the repository:
    ```sh
-  gh repo clone paviyatv/Hospital-Website
+   git clone https://github.com/your-repo/hospital-management.git
    ```
+
+
 4. Run the application:
    ```sh
    python main.py  # For Python projects
-   html  # For html projects
+   npm start  # For JavaScript projects
    ```
 
 ## Technologies Used
-- Programming Language: html / Css 
-- Database: MySQL 
-- Backend Framework: Node.js
+- Programming Language: Python / JavaScript
+- Database: MySQL
+- Backend Framework: Flask / Django / Express.js
 - Frontend Framework: Html / Css
 
 ## Usage
@@ -34,7 +37,10 @@ This is a Hospital Management System designed to streamline patient records, doc
 Feel free to fork the repository and submit pull requests with improvements and bug fixes.
 
 
+
 ## Contact
 For any inquiries, contact [paviyatv1@gmail.com].
+
+
 
 
