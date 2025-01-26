@@ -10,7 +10,8 @@ This is a Hospital Management System designed to streamline patient records, doc
 
 ## Video Sample
 https://youtu.be/9rW_7xmC7M4
-
+## Project URL
+https://github.com/paviyatv/Hospital-Website.git
 
 
 ## Technologies Used
