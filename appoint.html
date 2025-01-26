@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .appointment-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .appointment-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1000;
+        }
+        .popup h3 {
+            margin-bottom: 10px;
+        }
+        .popup p {
+            margin-bottom: 20px;
+        }
+        .popup button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background-color: #0056b3;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const tokenNumber = Math.floor(1000 + Math.random() * 9000); // Generate a random token number
+            document.getElementById('token-number').textContent = tokenNumber;
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.querySelector('.popup').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="overlay" onclick="closePopup()"></div>
+    <div class="popup">
+        <h3>Appointment Booked Successfully!</h3>
+        <p>Your token number is: <strong id="token-number"></strong></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <form class="appointment-form" onsubmit="handleSubmit(event)">
+        <h2>Book an Appointment</h2>
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="doctor">Select Doctor</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">-- Select a Doctor --</option>
+                <option value="dr_smith">Dr. Smith - Cardiologist</option>
+                <option value="dr_jones">Dr. Jones - Pediatrician</option>
+                <option value="dr_alia">Dr. Alia Bhatt - Orthopedic</option>
+                <option value="dr_varun">Dr. Varun Dhawan - Endocrinologist</option>
+                <option value="dr_siddharth">Dr. Siddharth  - Dermatologist</option>
+                <option value="dr_samantha">Dr.Samantha k - Surgeon</option>
+                <option value="dr_vijay">Dr. Vijay Kumar - Gastroenterologist</option>
+                <option value="dr_mithra">Dr. Mithra - Plastic Surgeon</option>
+                <option value="dr_mariya">Dr. Mariya- Oncologist</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Doctors Schedule</label>
+            <a href="time.html" class="link">Click here to view Doctors Schedule</a>
+        </div>
+        <div class="form-group">
+            <label for="message">Additional Notes</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter any additional information..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Book Appointment</button>
+        </div>
+    </form>
+</body>
+</html>
