@@ -24,10 +24,10 @@ This is a Hospital Management System designed to streamline patient records, doc
    ```
 
 ## Technologies Used
-- Programming Language: Python / JavaScript
+- Programming Language: HTML / CSS
 - Database: MySQL
 - Backend Framework: Flask / Django / Express.js
-- Frontend Framework: Html / Css
+- Frontend Framework: HTML / CSS
 
 ## Usage
 1. Register as an admin or log in.
