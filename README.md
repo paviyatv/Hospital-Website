@@ -11,19 +11,7 @@ This is a Hospital Management System designed to streamline patient records, doc
 ## Video Sample
 https://youtu.be/9rW_7xmC7M4
 
-## Installation
- Clone the repository:
-   ```sh
-   gh repo clone paviyatv/Hospital-Website
-   
-   ```
 
-
- Run the application:
-   ```sh
-   python main.py  # For Python projects
-   npm start  # For JavaScript projects
-   ```
 
 ## Technologies Used
 - Programming Language: HTML / CSS
