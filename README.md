@@ -1,7 +1,7 @@
 # Hospital Management System
 
 ## Introduction
-This is a Hospital Management System designed to streamline patient records, doctor schedules, and hospital operations. It helps in managing appointments, storing patient details, handling billing, and generating reports efficiently.
+This is a Hospital Management System designed to streamline patient records, doctor schedules, and hospital operations. It helps in managing appointments, storing patient details.
 
 ## Features
 - **Patient Management**: Add, update, and delete patient records.
