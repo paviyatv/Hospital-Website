@@ -8,7 +8,7 @@ This is a Hospital Management System designed to streamline patient records, doc
 - **Doctor Management**: Assign doctors to patients and manage schedules.
 - **Appointment Scheduling**: Book and track patient appointments.
 
-## Videos
+## Video Sample
 https://youtu.be/9rW_7xmC7M4
 
 ## Installation
