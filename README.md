@@ -11,28 +11,19 @@ This is a Hospital Management System designed to streamline patient records, doc
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/hospital-management.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd hospital-management
-   ```
-3. Install dependencies (if applicable):
-   ```sh
-   pip install -r requirements.txt  # For Python projects
-   npm install  # For Node.js projects
+  gh repo clone paviyatv/Hospital-Website
    ```
 4. Run the application:
    ```sh
    python main.py  # For Python projects
-   npm start  # For JavaScript projects
+   html  # For html projects
    ```
 
 ## Technologies Used
-- Programming Language: Python / JavaScript
-- Database: MySQL / PostgreSQL / MongoDB
-- Backend Framework: Flask / Django / Express.js
-- Frontend Framework: React.js / Angular
+- Programming Language: html / Css 
+- Database: MySQL 
+- Backend Framework: Node.js
+- Frontend Framework: Html / Css
 
 ## Usage
 1. Register as an admin or log in.
@@ -42,10 +33,8 @@ This is a Hospital Management System designed to streamline patient records, doc
 ## Contributing
 Feel free to fork the repository and submit pull requests with improvements and bug fixes.
 
-## License
-This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries, contact [your email or website link].
+For any inquiries, contact [paviyatv1@gmail.com].
 
 
