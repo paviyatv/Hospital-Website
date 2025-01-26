@@ -12,7 +12,8 @@ This is a Hospital Management System designed to streamline patient records, doc
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/hospital-management.git
+   gh repo clone paviyatv/Hospital-Website
+   
    ```
 
 
